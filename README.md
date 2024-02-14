@@ -28,8 +28,6 @@ dependencies {
 }
 ```
 
-Replace `com.tactivos.fresco` with the actual package name.
-
 ## Usage
 
 Refer to the [original Fresco documentation](http://frescolib.org/docs/index.html) for usage instructions. The API remains the same as the original Fresco library.
