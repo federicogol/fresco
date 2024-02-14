@@ -1,51 +1,44 @@
-# Fresco
+# Fresco with libjpeg-turbo 2.0.4
 
-<img alt="Fresco Logo" align="right" src="docs/static/sample-images/fresco_logo.svg" width="15%" />
+This is a fork of the [Fresco](http://frescolib.org/) image library for Android, developed by Facebook. This version of Fresco has been updated to use libjpeg-turbo 2.0.4 instead of the original libjpeg-turbo 1.5.3.
 
-[![Build Status](https://circleci.com/gh/facebook/fresco.svg?style=shield)](https://circleci.com/gh/facebook/fresco)
-[![License](https://img.shields.io/badge/license-MIT-brightgreen)](https://github.com/facebook/fresco/blob/main/LICENSE)
+## Features
 
-Fresco is a powerful system for displaying images in Android applications.
+- Memory-efficient image loading and caching.
+- Support for streaming images from various sources.
+- Automatic display of placeholders until the image loads.
+- Support for animated GIFs and WebPs.
+- Progressive JPEG loading.
+- Focus point specification for images.
+- Event listeners for various image loading events.
+- Image resizing and rescaling.
+- Support for round corners and circular images.
 
-Fresco takes care of image loading and display, so you don't have to. It will load images from the network, local storage, or local resources, and display a placeholder until the image has arrived. It has two levels of cache; one in memory and another in internal storage.
+## Changes in this Fork
 
-In Android 4.x and lower, Fresco puts images in a special region of Android memory. This lets your application run faster - and suffer the dreaded `OutOfMemoryError` much less often.
+- Updated the underlying JPEG library to libjpeg-turbo 2.0.4 for improved performance and compatibility.
 
-Fresco also supports:
+## Installation
 
-* streaming of progressive JPEGs
-* display of animated GIFs and WebPs
-* extensive customization of image loading and display
-* and much more!
+To use this fork in your project, add the following to your `build.gradle` file:
 
-Find out more at our [website](http://frescolib.org/index.html).
-
-## Requirements
-
-Fresco can be included in any Android application.
-
-Fresco supports Android 2.3 (Gingerbread) and later.
-
-## Using Fresco in your application
-
-If you are building with Gradle, simply add the following line to the `dependencies` section of your `build.gradle` file:
-
-```groovy
-implementation 'com.facebook.fresco:fresco:3.1.3'
+```gradle
+dependencies {
+    implementation 'com.tactivos.fresco:libjpeg-turbo:2.0.4'
+}
 ```
 
-For full details, visit the documentation on our web site, available in English and Chinese:
+Replace `com.tactivos.fresco` with the actual package name.
 
-<a href="http://frescolib.org/docs/index.html"><img src="http://frescolib.org/static/GetStarted-en.png" width="150" height="42"/></a>
+## Usage
 
-<a href="http://fresco-cn.org/docs/index.html"><img src="http://frescolib.org/static/GetStarted-zh.png" width="104" height="42"/></a>
+Refer to the [original Fresco documentation](http://frescolib.org/docs/index.html) for usage instructions. The API remains the same as the original Fresco library.
 
-## Join the Fresco community
+## Contributing
 
-Please use our [issues page](https://github.com/facebook/fresco/issues) to let us know of any problems.
-
-For pull requests, please see the [CONTRIBUTING](https://github.com/facebook/fresco/blob/main/CONTRIBUTING.md) file for information on how to help out. See our [documentation](http://frescolib.org/docs/building-from-source.html) for information on how to build from source.
-
+Contributions are welcome. Please open an issue to discuss your ideas or submit a pull request with your changes.
 
 ## License
-Fresco is [MIT-licensed](https://github.com/facebook/fresco/blob/main/LICENSE).
+
+This project is licensed under the same terms as the original Fresco project. See the [LICENSE](LICENSE) file for more information.
+
